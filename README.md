@@ -15,4 +15,4 @@ python3 main.py
 cd charts
 python3 main.py
 ```
-Este proyecto es netamente academico y de aprendizaje cualquier tipo de adicion a las lineas de codigo seran bien recibidas siempre y cuando aporten al conocimiento sobre el lenguaje de programacion de python y temas asociados
+Este proyecto es netamente academico y de aprendizaje. Cualquier tipo de adicion a las lineas de codigo seran bien recibidas siempre y cuando aporten al conocimiento sobre el lenguaje de programacion de python y temas asociados.
