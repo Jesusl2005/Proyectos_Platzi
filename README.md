@@ -4,11 +4,17 @@ Para correr el juego debes seguir las siguientes instrucciones en la terminal:
 
 ```sh
 # Para ejecutar piedra papel o tijera
+git clone
 cd game
+source env_game/bin/activate
+pip3 install -r requirements.txt
 python3 main.py
 
 # Para ejecutar programa de grafica de poblacion
+git clone
 cd app
+source env_app/bin/activate
+pip3 install -r requirements.txt
 python3 main.py
 
 # Programa sencillo de graficas
