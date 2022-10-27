@@ -15,9 +15,9 @@ def run():
     eleccion = input('Selecciona que tipo de grafica deseas ver: ')
     eleccion = int(eleccion)
     if eleccion == 1:
-      charts.generate_bar_chart(labels, values)
+      charts.generate_bar_chart(country['Country/Territory'], labels, values)
     elif eleccion == 2:
-      charts.generate_pie_chart(labels, values)
+      charts.generate_pie_chart(country['Country/Territory'], labels, values)
     else:
       print('Eleccion no valida, vuelva a intentarlo')
 
@@ -28,10 +28,10 @@ def run2():
   eleccion = int(eleccion)
   if eleccion == 1:
     labels, values = utils.get_world_percentage()
-    charts.generate_bar_chart(labels, values)
+    charts.generate_bar_chart('bar', labels, values)
   elif eleccion == 2:
     labels, values = utils.get_world_percentage()
-    charts.generate_pie_chart(labels, values)
+    charts.generate_pie_chart('pie', labels, values)
   else:
     print('Eleccion no valida, vuelva a intentarlo')
   
