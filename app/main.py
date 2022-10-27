@@ -17,7 +17,7 @@ def run():
     if eleccion == 1:
       charts.generate_bar_chart(labels, values)
     elif eleccion == 2:
-      charts.generate_bar_chart(labels, values)
+      charts.generate_pie_chart(labels, values)
     else:
       print('Eleccion no valida, vuelva a intentarlo')
 
