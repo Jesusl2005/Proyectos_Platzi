@@ -1,6 +1,7 @@
 import utils
 import read_csv
 import charts
+import pandas as pd
 
 def run():
   data = read_csv.read_csv('./data.csv')
@@ -35,6 +36,16 @@ def run2():
   else:
     print('Eleccion no valida, vuelva a intentarlo')
   
+
+def run3():
+  df = pd.read_csv('data.csv')
+  df = df[df['Continent'] == 'South America']
+
+  countries = df['Country/Territory'].values
+  percentages = df['World Population Percentage'].values
+
+  charts.generate_pie_chart(countries, percentages)
+
 if __name__ == '__main__':
   print('Elige que deseas encontrar:')
   print('1 - Si deseas ver el crecimiento poblacional de un pais especifico')
@@ -46,6 +57,6 @@ if __name__ == '__main__':
   elif eleccion == 2:
     run2()
   else:
-    print('Eleccion no permitida, vuelve a intentarlo')
-    
+    #print('Eleccion no permitida, vuelve a intentarlo')
+    run3()
   
