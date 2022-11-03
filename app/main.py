@@ -39,12 +39,12 @@ def run2():
 
 def run3():
   df = pd.read_csv('data.csv')
-  df = df[df['Continent'] == 'South America']
+  df = df[df['Continent'] == 'Africa']
 
   countries = df['Country/Territory'].values
   percentages = df['World Population Percentage'].values
 
-  charts.generate_pie_chart(countries, percentages)
+  charts.generate_pie_chart('pie',countries, percentages)
 
 if __name__ == '__main__':
   print('Elige que deseas encontrar:')
